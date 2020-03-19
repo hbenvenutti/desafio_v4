@@ -30,6 +30,12 @@ export default class Main extends Component {
     params: {},
   };
 
+  back = () => {
+    this.setState({
+      show: 'hidden',
+    });
+  };
+
   handleAddTitle = e => {
     this.setState({
       title: e.target.value,
