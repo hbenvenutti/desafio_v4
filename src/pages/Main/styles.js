@@ -22,9 +22,18 @@ export const AddForm = styled.form`
     margin-top: 10px;
   }
 
-  button {
+  div {
+    width: 290px !important;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 10px 0 0 auto;
-    width: 120px;
+  }
+
+  div button {
+    min-width: 120px;
+    flex: 2;
   }
 `;
 
@@ -130,7 +139,6 @@ export const List = styled.ul`
       border: none;
       background: rgb(225, 224, 224);
       svg {
-
         color: #333;
       }
     }

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable no-unused-expressions */
 import React, { Component } from 'react';
 
@@ -173,7 +174,12 @@ export default class Main extends Component {
               <label htmlFor="addTags">Tags</label>
               <input id="addTags" type="text" onChange={this.handleAddTags} />
 
-              <button type="submit">Add Tool</button>
+              <div>
+                <button type="button" onClick={this.back}>
+                  Back
+                </button>
+                <button type="submit">Add Tool</button>
+              </div>
             </AddForm>
           </Container>
         </PopupContainer>
